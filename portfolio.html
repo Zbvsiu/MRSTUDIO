@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MR STUDIO — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: {
+            base: {
+              50: "#fff8f1",100: "#ffefde",200: "#ffd9b3",300: "#ffc288",
+              400: "#ffa54d",500: "#ff8800",600: "#cc6d00",700: "#994f00",
+              800: "#663500",900: "#331a00",950: "#1a0d00"
+            },
+            accent: { light: "#ffb84d", dark: "#ff6600" }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { color-scheme: dark; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen bg-black text-white antialiased">
+
+ 
+  <div aria-hidden class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-gradient-to-b from-black via-black to-[#331a00]"></div>
+    <div class="absolute -top-20 left-1/2 h-[600px] w-[1200px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,136,0,.25),rgba(0,0,0,0))] blur-2xl"></div>
+    <div class="absolute bottom-0 right-0 h-72 w-72 translate-x-1/3 translate-y-1/3 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,180,77,.22),rgba(0,0,0,0))] blur-2xl"></div>
+    <div class="absolute inset-0 opacity-[0.06] [background-image:radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+  </div>
+
+  
+  <nav class="sticky top-0 z-40 w-full border-b border-[#663500]/70 bg-black/60 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+    <div class="flex items-center gap-2">
+      <img src="logo.png" alt="MR STUDIO" class="h-10 w-auto" />
+    </div>
+    <div class="hidden gap-6 text-sm md:flex">
+      <a class="opacity-80 hover:opacity-100" href="index.html">Strona główna</a>
+      <a class="opacity-80 hover:opacity-100" href="#portfolio">Portfolio</a>
+      <a class="opacity-80 hover:opacity-100" href="#contact">Kontakt</a>
+    </div>
+  </div>
+</nav>
+
+  
+<section class="py-12 text-center">
+  <div class="max-w-6xl mx-auto rounded-3xl border-4 border-accent-dark shadow-2xl overflow-hidden">
+    <img src="baner.png" alt="Baner Portfolio" class="w-full h-auto object-cover">
+  </div>
+</section
+
+ 
+  <section class="py-10 px-4 text-center">
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-4">
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="all">Wszystkie</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="foldery">Foldery</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="kalendarze">Kalendarze</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="teczki">Teczki</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="logotypy">Logotypy</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="papeteria">Papeteria firmowa</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="reklamy">Reklamy</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="zaproszenia">Zaproszenia</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="ulotki">Ulotki</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="druk">Druk wielkoformatowy</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="www">Strony WWW</button>
+      <button class="category-btn px-4 py-2 rounded-xl bg-accent-dark text-white font-semibold hover:bg-accent-light transition" data-category="katalogi">Katalogi</button>
+    </div>
+  </section>
+
+
+  <section id="portfolio" class="py-10 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="foldery">
+        <img src="kalendarze1.png" alt="Foldery Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="foldery">
+        <img src="kalendarze1.png" alt="Foldery Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="foldery">
+        <img src="kalendarze1.png" alt="Foldery Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="kalendarze">
+        <img src="kalendarze1.png" alt="Kalendarze Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="kalendarze">
+        <img src="kalendarze1.png" alt="Kalendarze Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="kalendarze">
+        <img src="kalendarze1.png" alt="Kalendarze Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="teczki">
+        <img src="kalendarze1.png" alt="Teczki Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="teczki">
+        <img src="kalendarze1.png" alt="Teczki Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="teczki">
+        <img src="kalendarze1.png" alt="Teczki Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="logotypy">
+        <img src="kalendarze1.png" alt="Logotypy Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="logotypy">
+        <img src="kalendarze1.png" alt="Logotypy Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="logotypy">
+        <img src="kalendarze1.png" alt="Logotypy Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="papeteria">
+        <img src="kalendarze1.png" alt="Papeteria Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="papeteria">
+        <img src="kalendarze1.png" alt="Papeteria Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="papeteria">
+        <img src="kalendarze1.png" alt="Papeteria Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="reklamy">
+        <img src="kalendarze1.png" alt="Reklamy Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="reklamy">
+        <img src="kalendarze1.png" alt="Reklamy Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="reklamy">
+        <img src="kalendarze1.png" alt="Reklamy Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="zaproszenia">
+        <img src="kalendarze1.png" alt="Zaproszenia Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="zaproszenia">
+        <img src="kalendarze1.png" alt="Zaproszenia Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="zaproszenia">
+        <img src="kalendarze1.png" alt="Zaproszenia Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="ulotki">
+        <img src="kalendarze1.png" alt="Ulotki Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="ulotki">
+        <img src="kalendarze1.png" alt="Ulotki Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="ulotki">
+        <img src="kalendarze1.png" alt="Ulotki Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+     
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="druk">
+        <img src="kalendarze1.png" alt="Druk Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="druk">
+        <img src="kalendarze1.png" alt="Druk Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="druk">
+        <img src="kalendarze1.png" alt="Druk Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="www">
+        <img src="kalendarze1.png" alt="WWW Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="www">
+        <img src="kalendarze1.png" alt="WWW Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="www">
+        <img src="kalendarze1.png" alt="WWW Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+
+      
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="katalogi">
+        <img src="kalendarze1.png" alt="Katalogi Projekt 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="katalogi">
+        <img src="kalendarze1.png" alt="Katalogi Projekt 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+      <div class="project group relative rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 overflow-hidden" data-category="katalogi">
+        <img src="kalendarze1.png" alt="Katalogi Projekt 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105">
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="py-20 bg-[#1a0d00]/20">
+    <div class="mx-auto max-w-2xl px-4 text-center mb-8">
+      <h2 class="text-3xl font-bold md:text-4xl text-[#ffa54d]">Skontaktuj się z nami</h2>
+      <p class="mt-3 text-white text-lg md:text-xl">Masz projekt? Chcesz wyceny? Napisz do nas!</p>
+    </div>
+    <div class="mx-auto max-w-2xl px-4 grid gap-6 md:grid-cols-2">
+      <div class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+        <h3 class="text-xl font-semibold text-[#ffa54d]">MR STUDIO</h3>
+        <p class="mt-2 text-white">41-800 Zabrze<br>ul. Galla 29</p>
+        <p class="mt-2 text-white">tel.: 32/ 278 79 60<br>tel.: 32/ 278 79 63</p>
+        <p class="mt-2 text-white">e-mail: <a href="mailto:info@mrstudio.pl" class="underline hover:text-[#ffa54d]">info@mrstudio.pl</a></p>
+        <p class="mt-2 text-white">Zapraszamy od pn-pt: 8:30 - 16:30</p>
+      </div>
+      <div class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+        <h3 class="text-xl font-semibold text-[#ffa54d]">DRUKARNIA</h3>
+        <p class="mt-2 text-white">41-800 Zabrze<br>ul. Sienkiewicza 2, oficyna</p>
+        <p class="mt-2 text-white">tel.: 32/ 278 47 33<br>tel.: 32/ 278 79 62</p>
+        <p class="mt-2 text-white">e-mail: <a href="mailto:sekretariat@mrstudio.pl" class="underline hover:text-[#ffa54d]">sekretariat@mrstudio.pl</a></p>
+        <p class="mt-2 text-white">Zapraszamy od pn-pt: 8:00 - 22:00</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="relative py-16">
+    <div class="max-w-6xl mx-auto text-center">
+      <a href="https://viwid.pl" target="_blank" class="relative inline-block overflow-hidden rounded-lg border-2 border-accent-dark px-10 py-3 group">
+        <span class="absolute inset-0 bg-gradient-to-r from-accent-light to-accent-dark opacity-30 animate-pulse"></span>
+        <p class="relative text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent-light to-accent-dark group-hover:brightness-125 transition">
+          POWERED BY VIWID.PL
+        </p>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll(".category-btn");
+    const projects = document.querySelectorAll(".project");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const category = btn.dataset.category;
+        projects.forEach(p => {
+          if(category === "all" || p.dataset.category === category) {
+            p.style.display = "block";
+          } else {
+            p.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

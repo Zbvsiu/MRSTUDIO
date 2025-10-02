@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MR STUDIO — Oficjalna strona</title>
+  <meta name="description" content="MR STUDIO — studio graficzne, branding, animacje, wizualizacje 3D. Szybko i profesjonalnie." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: {
+            base: {
+              50: "#fff8f1",100: "#ffefde",200: "#ffd9b3",300: "#ffc288",
+              400: "#ffa54d",500: "#ff8800",600: "#cc6d00",700: "#994f00",
+              800: "#663500",900: "#331a00",950: "#1a0d00"
+            },
+            accent: { light: "#ffb84d", dark: "#ff6600" }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { color-scheme: dark; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen bg-black text-white antialiased">
+
+  <!-- Gradient tło + dekoracje -->
+  <div aria-hidden class="pointer-events-none fixed inset-0 -z-10">
+    <div class="absolute inset-0 bg-gradient-to-b from-black via-black to-[#331a00]"></div>
+    <div class="absolute -top-20 left-1/2 h-[600px] w-[1200px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,136,0,.25),rgba(0,0,0,0))] blur-2xl"></div>
+    <div class="absolute bottom-0 right-0 h-72 w-72 translate-x-1/3 translate-y-1/3 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,180,77,.22),rgba(0,0,0,0))] blur-2xl"></div>
+    <div class="absolute inset-0 opacity-[0.06] [background-image:radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-40 w-full border-b border-[#663500]/70 bg-black/60 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-2">
+        <img src="logo.png" alt="MR STUDIO" class="h-10 w-auto" />
+      </div>
+      <div class="hidden gap-6 text-sm md:flex">
+        <a class="opacity-80 hover:opacity-100" href="#features">Oferty</a>
+        <a class="opacity-80 hover:opacity-100" href="portfolio.html">Portfolio</a>
+        <a class="opacity-80 hover:opacity-100" href="#faq">FAQ</a>
+      </div>
+      <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-white/10 px-3 py-2 text-sm font-semibold hover:bg-white/20">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="relative py-20 md:py-28">
+    <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 md:grid-cols-2">
+      <div>
+        <span class="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#331a00]/60 px-3 py-1 text-xs text-[#ffa54d]">
+          <span class="inline-flex h-4 w-4 items-center justify-center rounded-full bg-white/10">✨</span>
+          Oficjalne studio graficzne
+        </span>
+        <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+          Tworzymy, projektujemy, <span class="bg-gradient-to-r from-accent-light to-accent-dark bg-clip-text text-transparent">pokazujemy</span>
+        </h1>
+        <p class="mt-4 max-w-xl text-base text-[#ffa54d] md:text-lg">
+          MR STUDIO to studio graficzne zajmujące się brandingiem, projektami dla firm i drukowaniem.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="portfolio.html" class="rounded-xl bg-accent-dark px-5 py-3 text-sm font-bold text-white hover:bg-accent-light">
+            Sprawdź nasze prace
+          </a>
+        </div>
+        <div class="mt-6 flex items-center gap-6 text-sm text-[#ffa54d]">
+          <span class="inline-flex items-center gap-2">🛡️ Profesjonalnie</span>
+          <span class="inline-flex items-center gap-2">⚡ Szybko</span>
+          <span class="inline-flex items-center gap-2">⏱️ 24/7</span>
+        </div>
+      </div>
+
+      <!-- MR STUDIO panel -->
+      <div class="relative">
+        <div class="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl border border-[#663500]/80 bg-[#331a00]/60 shadow-2xl">
+          <div class="flex items-center justify-between border-b border-[#663500]/80 px-4 py-3">
+            <div class="flex items-center gap-2 text-[#ffa54d]">
+              <div class="h-3 w-3 rounded-full bg-red-500/70"></div>
+              <div class="h-3 w-3 rounded-full bg-yellow-500/70"></div>
+              <div class="h-3 w-3 rounded-full bg-accent-dark/70"></div>
+            </div>
+            <span class="text-xs text-[#ffa54d]">MR STUDIO</span>
+          </div>
+          <div class="space-y-4 p-6">
+            <div class="flex items-center justify-between rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-4">
+              <div>
+                <div class="mb-1 flex items-center gap-2"><span class="rounded-full bg-accent-dark/10 px-2 py-0.5 text-xs text-accent-light">1</span><h3 class="font-semibold">Kalendarze</h3></div>
+                <p class="text-sm text-[#ffa54d]">Tworzymy wiele kalendarzy dla firm !</p>
+              </div>
+              <div class="text-right">
+               
+              </div>
+            </div>
+            <div class="flex items-center justify-between rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-4">
+              <div>
+                <div class="mb-1 flex items-center gap-2"><span class="rounded-full bg-accent-dark/10 px-2 py-0.5 text-xs text-accent-light">2</span><h3 class="font-semibold">Banery</h3></div>
+                <p class="text-sm text-[#ffa54d]">Tworzymy różne banery!</p>
+              </div>
+              <div class="text-right">
+                
+                
+              </div>
+            </div>
+            <div class="flex items-center justify-between rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-4">
+              <div>
+                <div class="mb-1 flex items-center gap-2"><span class="rounded-full bg-accent-dark/10 px-2 py-0.5 text-xs text-accent-light">3</span><h3 class="font-semibold">I wiele więcej</h3></div>
+                <p class="text-sm text-[#ffa54d]">Sprawdź więcej w naszym portfolio lub skontaktuj się z nami.</p>
+              </div>
+              <div class="text-right">
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="relative py-20">
+    <div class="mx-auto mb-12 max-w-2xl px-4 text-center">
+      <h2 class="text-3xl font-bold md:text-4xl">
+        Co oferuje <span class="bg-gradient-to-r from-accent-light to-accent-dark bg-clip-text text-transparent">MR STUDIO</span>
+      </h2>
+      <p class="mt-3 text-[#ffa54d]">Profesjonalne studio graficzne: branding, animacje, wizualizacje 3D i kreatywne projekty.</p>
+    </div>
+    <div class="mx-auto grid max-w-6xl gap-6 px-4 md:grid-cols-3">
+      <div class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+        <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#663500]/80">🎨</div>
+        <h3 class="text-lg font-semibold">Kreatywny design</h3>
+        <p class="mt-1 text-[#ffa54d]">Tworzymy unikalne projekty graficzne dopasowane do Twojej marki.</p>
+      </div>
+      <div class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+        <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#663500]/80">⚡</div>
+        <h3 class="text-lg font-semibold">Szybka realizacja</h3>
+        <p class="mt-1 text-[#ffa54d]">Projekty dostarczamy szybko, bez kompromisów jakościowych.</p>
+      </div>
+      <div class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+        <div class="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#663500]/80">✨</div>
+        <h3 class="text-lg font-semibold">Wizualizacje</h3>
+        <p class="mt-1 text-[#ffa54d]">Tworzymy wizualizacje które robią wrażenie.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-[#1a0d00]/20">
+  <div class="mx-auto max-w-2xl px-4 text-center mb-8">
+    <h2 class="text-3xl font-bold md:text-4xl text-[#ffa54d]">Skontaktuj się z nami</h2>
+    <p class="mt-3 text-white text-lg md:text-xl">Masz projekt? Chcesz wyceny? Napisz do nas!</p>
+  </div>
+  <div class="mx-auto max-w-2xl px-4 grid gap-6 md:grid-cols-2">
+    <!-- MR STUDIO -->
+    <div class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+      <h3 class="text-xl font-semibold text-[#ffa54d]">MR STUDIO</h3>
+      <p class="mt-2 text-white">41-800 Zabrze<br>ul. Galla 29</p>
+      <p class="mt-2 text-white">tel.: 32/ 278 79 60<br>tel.: 32/ 278 79 63</p>
+      <p class="mt-2 text-white">e-mail: <a href="mailto:info@mrstudio.pl" class="underline hover:text-[#ffa54d]">info@mrstudio.pl</a></p>
+      <p class="mt-2 text-white">Zapraszamy od pn-pt: 8:30 - 16:30</p>
+    </div>
+    <!-- DRUKARNIA -->
+    <div class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+      <h3 class="text-xl font-semibold text-[#ffa54d]">DRUKARNIA</h3>
+      <p class="mt-2 text-white">41-800 Zabrze<br>ul. Sienkiewicza 2, oficyna</p>
+      <p class="mt-2 text-white">tel.: 32/ 278 47 33<br>tel.: 32/ 278 79 62</p>
+      <p class="mt-2 text-white">e-mail: <a href="mailto:sekretariat@mrstudio.pl" class="underline hover:text-[#ffa54d]">sekretariat@mrstudio.pl</a></p>
+      <p class="mt-2 text-white">Zapraszamy od pn-pt: 8:00 - 22:00</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ -->
+  <section id="faq" class="relative py-20">
+    <div class="mx-auto mb-10 max-w-2xl px-4 text-center">
+      <h2 class="text-3xl font-bold md:text-4xl">FAQ</h2>
+      <p class="mt-2 text-[#ffa54d]">Najczęstsze pytania o MR STUDIO.</p>
+    </div>
+    <div class="mx-auto grid max-w-3xl gap-4 px-4">
+      <details class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6" open>
+        <summary class="cursor-pointer text-lg font-semibold">Jak wygląda współpraca?</summary>
+        <p class="mt-2 text-[#ffa54d]">Proces rozpoczyna się od briefu, następnie projekt, poprawki i finalizacja.</p>
+      </details>
+      <details class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+        <summary class="cursor-pointer text-lg font-semibold">Ile trwa realizacja?</summary>
+        <p class="mt-2 text-[#ffa54d]">Czas zależy od projektu – zwykle od 2 dni do 2 tygodni.</p>
+      </details>
+      <details class="rounded-2xl border border-[#663500]/80 bg-[#331a00]/60 p-6">
+        <summary class="cursor-pointer text-lg font-semibold">Czy mogę wprowadzić poprawki?</summary>
+        <p class="mt-2 text-[#ffa54d]">Oczywiście, każda współpraca obejmuje rundy poprawek.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="relative py-16">
+  <div class="max-w-6xl mx-auto text-center">
+    <a href="https://viwid.pl" target="_blank" class="relative inline-block overflow-hidden rounded-lg border-2 border-accent-dark px-10 py-3 group">
+      <span class="absolute inset-0 bg-gradient-to-r from-accent-light to-accent-dark opacity-30 animate-pulse"></span>
+      <p class="relative text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent-light to-accent-dark group-hover:brightness-125 transition">
+        POWERED BY VIWID.PL
+      </p>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
